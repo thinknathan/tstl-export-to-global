@@ -42,7 +42,7 @@ npm install git+https://git@github.com/thinknathan/tstl-export-to-global.git#^1.
 
 2. Add `tstl-export-to-global` to `tstl.luaPlugins` in `tsconfig.json`
 
-3. Define `match`, which will only apply the transformation to files if their path matches.
+3. Define `match`, which will only apply the transformation to files if their _input_ (TypeScript file) path matches.
 
 ```diff
 {
