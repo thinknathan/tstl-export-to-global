@@ -12,7 +12,8 @@ Can be used as an alternative to [tstl-export-as-global](https://github.com/ts-d
 
 ```lua
 local ____exports = {}
-____exports.init = function(self)
+____exports.foo = 10
+____exports.bar = function(self)
 	...
 end
 return ____exports
@@ -21,7 +22,8 @@ return ____exports
 Becomes:
 
 ```lua
-function init(self)
+foo = 10
+function bar(self)
 	...
 end
 ```
