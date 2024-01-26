@@ -5,7 +5,7 @@ TypeScriptToLua plugin that transforms all exported variables in a given file to
 Can be used as an alternative to [tstl-export-as-global](https://github.com/ts-defold/tstl-export-as-global). The benefits from switching to this plugin are as follows:
 
 1. Saves allocating one table
-2. Allows you to use `export FOO = function()` instead of `export function FOO()` if you prefer that syntax
+2. Allows you to use `export const FOO = function()` instead of `export function FOO()` if you prefer that syntax
 3. All variables are transformed, not just functions
 
 ## Example
