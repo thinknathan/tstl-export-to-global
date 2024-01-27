@@ -11,6 +11,7 @@
 	"main": "dist/tstl-export-to-global.cjs",
 	"type": "commonjs",
 	"scripts": {
+		"ci": "tsc --noEmit",
 		"build": "tsc && npm run renameCjs && npm run prettier",
 		"renameCjs": "node -e \"require('fs').renameSync('dist/tstl-export-to-global.js', 'dist/tstl-export-to-global.cjs')\"",
 		"prettier": "prettier --write ./"
