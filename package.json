@@ -12,7 +12,7 @@
 	"type": "commonjs",
 	"scripts": {
 		"ci": "tsc --noEmit && npm run lint",
-		"build": "tsc && npm run renameCjs && npm run prettier",
+		"build": "tsc && npm run renameCjs && prettier \"./dist/*.cjs\" --write",
 		"renameCjs": "node -e \"require('fs').renameSync('dist/tstl-export-to-global.js', 'dist/tstl-export-to-global.cjs')\"",
 		"lint": "eslint ./*.ts",
 		"prettier": "prettier --write ./"
