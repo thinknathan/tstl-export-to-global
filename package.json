@@ -11,12 +11,18 @@
 	"main": "dist/tstl-export-to-global.cjs",
 	"type": "commonjs",
 	"scripts": {
-		"ci": "tsc --noEmit",
+		"ci": "tsc --noEmit && npm run lint",
 		"build": "tsc && npm run renameCjs && npm run prettier",
 		"renameCjs": "node -e \"require('fs').renameSync('dist/tstl-export-to-global.js', 'dist/tstl-export-to-global.cjs')\"",
+		"lint": "eslint ./*.ts",
 		"prettier": "prettier --write ./"
 	},
 	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "~6.16.0",
+		"@typescript-eslint/parser": "~6.16.0",
+		"eslint": "~8.56.0",
+		"eslint-config-prettier": "~9.1.0",
+		"eslint-plugin-prettier": "~5.1.0",
 		"prettier": "^3.1.0",
 		"typescript": "~5.3.3",
 		"typescript-to-lua": "~1.23.0"
