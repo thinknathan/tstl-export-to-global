@@ -10,6 +10,9 @@
 	"license": "CC0-1.0",
 	"main": "dist/tstl-export-to-global.cjs",
 	"type": "commonjs",
+	"files": [
+		"dist/tstl-export-to-global.cjs"
+	],
 	"scripts": {
 		"ci": "tsc --noEmit && npm run lint",
 		"build": "tsc && npm run renameCjs && prettier \"./dist/*.cjs\" --write",
