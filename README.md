@@ -39,9 +39,9 @@ Requires TSTL >= 1.22.0.
 1. Install this plugin
 
 ```bash
-yarn add git+https://git@github.com/thinknathan/tstl-export-to-global.git#^1.0.0 -D
+yarn add tstl-export-to-global -D
 # or
-npm install git+https://git@github.com/thinknathan/tstl-export-to-global.git#^1.0.0 --save-dev
+npm install tstl-export-to-global --save-dev
 ```
 
 2. Add `tstl-export-to-global` to `tstl.luaPlugins` in `tsconfig.json`
