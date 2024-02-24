@@ -10,6 +10,8 @@ Can be used as an alternative to [tstl-export-as-global](https://github.com/ts-d
 2. Allows you to use `export const FOO = function()` instead of `export function FOO()` if you prefer that syntax
 3. All variables are transformed, not just functions
 
+:exclamation: Use this and any code transformation plugin with caution. Mistakes are possible.
+
 ## Example
 
 ```lua
