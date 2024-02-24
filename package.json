@@ -1,6 +1,6 @@
 {
 	"name": "tstl-export-to-global",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "TypeScriptToLua plugin that transforms all exported variables to global declarations",
 	"repository": {
 		"type": "git",
