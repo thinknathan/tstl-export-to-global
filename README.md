@@ -1,6 +1,6 @@
 # tstl-export-to-global
 
-[![CI](https://github.com/thinknathan/tstl-export-to-global/actions/workflows/ci.yml/badge.svg)](https://github.com/thinknathan/tstl-export-to-global/actions/workflows/ci.yml)
+[![CI](https://github.com/thinknathan/tstl-export-to-global/actions/workflows/ci.yml/badge.svg)](https://github.com/thinknathan/tstl-export-to-global/actions/workflows/ci.yml) ![GitHub License](https://img.shields.io/github/license/thinknathan/tstl-export-to-global)
 
 TypeScriptToLua plugin that transforms all exported variables in a given file to global declarations.
 
