@@ -18,7 +18,6 @@ const plugin = (options: PluginOptions): tstl.Plugin => {
 			result: tstl.EmitFile[],
 		) => {
 			if (!options.match) {
-				// @ts-expect-error Missing console definition
 				console.warn(
 					'`tstl-export-to-global` is missing `match` in `tsconfig`',
 				);
