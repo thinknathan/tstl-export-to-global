@@ -7,7 +7,6 @@ const plugin = (options) => {
 	return {
 		afterEmit: (_program, _options, emitHost, result) => {
 			if (!options.match) {
-				// @ts-expect-error Missing console definition
 				console.warn(
 					'`tstl-export-to-global` is missing `match` in `tsconfig`',
 				);

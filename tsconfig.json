@@ -3,6 +3,7 @@
 	"compilerOptions": {
 		"lib": ["esnext", "DOM"],
 		"module": "CommonJS",
+		"esModuleInterop": true,
 		"outDir": "./dist",
 		"rootDir": ".",
 		"sourceMap": false,

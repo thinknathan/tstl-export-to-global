@@ -1,4 +1,4 @@
-import * as ts from 'typescript';
+import type { Program } from 'typescript';
 import * as tstl from 'typescript-to-lua';
 
 interface PluginOptions {
@@ -12,7 +12,7 @@ interface PluginOptions {
 const plugin = (options: PluginOptions): tstl.Plugin => {
 	return {
 		afterEmit: (
-			_program: ts.Program,
+			_program: Program,
 			_options: tstl.CompilerOptions,
 			emitHost: tstl.EmitHost,
 			result: tstl.EmitFile[],
